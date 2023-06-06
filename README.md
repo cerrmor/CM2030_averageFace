@@ -13,4 +13,4 @@ The other projects were:
   CM2030_webcamPiano
   CM2030_InstagramFilter
 
-This project utilizes JavaScript and the p5.js library to implement a series of image filters.
+This project utilizes JavaScript and the p5.js library to average a series of images together.
