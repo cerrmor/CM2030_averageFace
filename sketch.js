@@ -1,3 +1,6 @@
+//canvas veriable
+var c;
+
 var imgs = [];
 var avgImg;
 var numOfImages = 30;
@@ -17,13 +20,14 @@ function preload() { // preload() runs once
 }
 //////////////////////////////////////////////////////////
 function setup() {
-    createCanvas(firstImg.width*2, firstImg.height);
-    
+    c = createCanvas(firstImg.width*2, firstImg.height);
+    c.parent('canvas');
+    c.style('display', 'block');
     avgImg = createGraphics(firstImg.width, firstImg.height);
  
     pixelDensity(1);
     
-    instructions = createP('Press <em>spacebar</em> for a new random image. Move the mouse within the blue box to transisition between the origional image and the average image.')
+    // instructions = createP('Press <em>spacebar</em> for a new random image. Move the mouse within the blue box to transisition between the origional image and the average image.')
     
 }
 //////////////////////////////////////////////////////////

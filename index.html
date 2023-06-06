@@ -5,11 +5,25 @@
     <title>graphicsProgramming - Coursera</title>
     <script src="libraries/p5.min.js" type="text/javascript"></script>
     <script src="libraries/p5.sound.min.js" type="text/javascript"></script>
-    
-    <script src="sketch.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
 
-    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+    <script src="sketch.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style> -->
   </head>
   <body>
+    <div>
+      <div id="canvas">
+
+      </div>
+      <div class="instructions">
+        <h1 class="title">Instructions</h1>
+        <ul>
+          <li><strong>spacebar</strong> ➡ random new starting image</li>
+          <li><strong>mouse</strong> ➡ move mouse in blue box to transition between original and average image</li>
+        </ul>
+        <button id="myButton" onclick="window.location.href='https://cerrmor.github.io/project_pages/averageFace.html';">Project Page</button>
+      </div>
+    </div>
   </body>
 </html>
